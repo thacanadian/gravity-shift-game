@@ -1,0 +1,36 @@
+name: Verify game
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate self-contained game
+        run: |
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+
+          source = Path("index.html").read_text(encoding="utf-8")
+          HTMLParser().feed(source)
+
+          required = [
+              "Gravity Shift",
+              "gravityShiftProgress",
+              "requestAnimationFrame",
+              "data-gravity",
+          ]
+          missing = [marker for marker in required if marker not in source]
+          if missing:
+              raise SystemExit(f"Missing required game markers: {missing}")
+
+          print("Gravity Shift HTML and required game markers verified.")
+          PY
