@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#7deaff" stop-opacity=".55"/><stop offset="1" stop-color="#7deaff" stop-opacity="0"/></radialGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080c19"/><stop offset="1" stop-color="#111b38"/></linearGradient>
+  </defs>
+  <rect width="1280" height="640" rx="22" fill="url(#bg)"/>
+  <path d="M0 80H1280M0 160H1280M0 240H1280M0 320H1280M0 400H1280M0 480H1280M0 560H1280M80 0V640M160 0V640M240 0V640M320 0V640M400 0V640M480 0V640M560 0V640M640 0V640M720 0V640M800 0V640M880 0V640M960 0V640M1040 0V640M1120 0V640M1200 0V640" stroke="#273458" opacity=".28"/>
+  <circle cx="975" cy="310" r="260" fill="url(#glow)"/>
+  <g transform="translate(770 135) rotate(10 175 175)">
+    <rect width="350" height="350" rx="35" fill="#0c142b" stroke="#536792" stroke-width="6"/>
+    <path d="M70 70h88v45h-43v80H70zM235 70h45v210h-88v-45h43zM115 235h45v45H70v-90h45z" fill="#2c3d67"/>
+    <path d="M175 105l45 70-45 70-45-70z" fill="none" stroke="#ff5277" stroke-width="12"/>
+    <circle cx="105" cy="165" r="24" fill="#baf9ff" stroke="#5cddf2" stroke-width="9"/>
+    <path d="M105 116V75m-18 20 18-20 18 20" fill="none" stroke="#7deaff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M276 273l28 14-28 14z" fill="#ffd85e"/>
+  </g>
+  <text x="82" y="156" fill="#7deaff" font-family="DejaVu Sans Mono,monospace" font-size="15" letter-spacing="5">PHYSICS PUZZLE / 8 CHAMBERS</text>
+  <text x="76" y="285" fill="#f5f7ff" font-family="DejaVu Sans,Arial,sans-serif" font-size="92" font-weight="700" letter-spacing="-4">GRAVITY</text>
+  <text x="76" y="380" fill="#aa91ff" font-family="DejaVu Sans,Arial,sans-serif" font-size="92" font-weight="700" letter-spacing="-4">SHIFT</text>
+  <text x="84" y="436" fill="#aab4cc" font-family="DejaVu Sans Mono,monospace" font-size="17" letter-spacing="2">REDIRECT · COLLECT · ESCAPE</text>
+  <rect x="84" y="500" width="530" height="3" fill="#233252"/><rect x="84" y="500" width="365" height="3" fill="#7deaff"/>
+  <text x="84" y="546" fill="#6f7e9e" font-family="DejaVu Sans Mono,monospace" font-size="13" letter-spacing="2">DESKTOP + MOBILE · NO INSTALLATION</text>
+</svg>
